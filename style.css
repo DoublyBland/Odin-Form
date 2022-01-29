@@ -1,0 +1,90 @@
+body {
+    display: flex;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(/Norse-Bold.otf);
+}
+
+#left-content {
+    background-image: url("./plant-bg.jpeg");
+    background-color: #cccccc;
+    height: 100vh;
+    position: relative;
+    /* width: 33; */
+}
+
+.logo-bar {
+    /* opacity: .3; */
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 20%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Norse-Bold', serif;
+}
+
+.logo-bar img {
+    opacity: 1;
+    height: 100%;
+}
+
+.logo-bar p {
+    color: white;
+    font-size: 72px;
+}
+
+#credit {
+    position: absolute;
+    top: 95%;
+    color: white;
+    align-self: center;
+}
+
+#right-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: lightblue;
+    flex: 1;
+}
+main {
+    background-color: lightcoral;
+    flex: 1;
+}
+footer {
+    background-color: lightgoldenrodyellow;
+    flex: 1;
+}
+
+form{
+    display: flex;;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+    height: 20px;
+}
+
+input:focus {
+    background-color: lightskyblue;
+}
+
+.left-form>div, .right-form>div {
+    margin: 20px;
+}
