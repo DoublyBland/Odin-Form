@@ -12,7 +12,7 @@ body {
     background-color: #cccccc;
     height: 100vh;
     position: relative;
-    /* width: 33; */
+    flex:1
 }
 
 .logo-bar {
@@ -48,18 +48,20 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: auto;
+    flex: 2;
 }
 
 header {
-    background-color: lightblue;
+    background-color: whitesmoke;
     flex: 1;
 }
 main {
-    background-color: lightcoral;
+    background-color: white;
     flex: 1;
 }
 footer {
-    background-color: lightgoldenrodyellow;
+    background-color: whitesmoke;
     flex: 1;
 }
 
@@ -70,6 +72,10 @@ form{
 button {
     background-color: #596D48;
     color: white;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    box-shadow: lightslategray;
 }
 
 input, label {
@@ -78,13 +84,51 @@ input, label {
 
 input {
     border-radius: 5px;
+    border-color: #E5E7EB;
     height: 20px;
 }
 
 input:focus {
     background-color: lightskyblue;
+    border-color: blue;
+    box-shadow: 2px 2px 2px lightskyblue;
+}
+
+.hidden {
+    display: none;
 }
 
 .left-form>div, .right-form>div {
-    margin: 20px;
+    margin: 20px 20px 20px 0;
+}
+
+.right-form>div {
+    margin-left: 30px;
+}
+
+header>*, footer>*, main>* {
+    margin-left: 5%;
+}
+
+header p:nth-child(1){
+    margin-top: 12%;
+}
+header p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-right: 15%;
+}
+
+main>h2{
+    margin-bottom: 0px;
+}
+
+main>p{
+    margin-top: 0px;
+    color: red;
+    display: none;
+}
+
+.invalid {
+    border-color: red;
 }
